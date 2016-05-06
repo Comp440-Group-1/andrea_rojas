@@ -201,6 +201,7 @@ ON [PRIMARY]
 GO
 
 
+
 -- ----------------------------
 --  Primary key structure for table address
 -- ----------------------------
@@ -615,4 +616,5 @@ GO
 -- ----------------------------
 ALTER TABLE [dbo1].[version_feature] SET (LOCK_ESCALATION = TABLE)
 GO
+
 
