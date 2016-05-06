@@ -4,7 +4,6 @@
  Source Host           : 130.166.41.222\CSDB440
  Source Database       : s16guest24
  Source Schema         : dbo1
-
  Target Server Version : 11005058
  File Encoding         : utf-8
 */
