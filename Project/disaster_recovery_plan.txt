@@ -1,0 +1,29 @@
+Disaster Recovery Plan
+
+	The purpose of this plan is to have SQL server up and running, and to be able to overcome data loss after any diaster
+
+	
+	Backup and Restore
+
+		Most Basic Option
+
+		1. Backup SQL Server data
+		2. Move the backed up data to a neutral off-site location and 
+		3. Test restore to assure data integrity 
+
+		SQL Server offers several types of backups including a full backup, differential backup, transaction log backup, and partial backup.
+
+		A Restore strategy shall also be created which will define who will perform restores and how to meet availabilty and data loss goals.
+
+
+	Database Mirroring
+
+		Increases our availabilty of SQL Server
+
+		1. Maintain two copies of database
+		2. Each copy of the database must be on a different SQL Server instance
+		3. Two copies of the database form a database mirroring session
+			a. One instance is primary server
+			b. Other instance is in standy mode, acts as mirror server (has synchronized sessions with quick failover time without data loss)
+			c. The principal server is sending the active portion of a transaction log to the mirror server where all transactions are redone 
+	
